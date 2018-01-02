@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "jkas.notfier.function", "jkas.notfier.function\jkas.notfier.function.csproj", "{91BA6D57-A526-4F78-9D13-DD2BB827AA3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jks.notfier.tests", "jks.notfier.tests\jks.notfier.tests.csproj", "{BA0DBD92-42DD-4BDB-95D8-C9F4A3F96016}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91BA6D57-A526-4F78-9D13-DD2BB827AA3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91BA6D57-A526-4F78-9D13-DD2BB827AA3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91BA6D57-A526-4F78-9D13-DD2BB827AA3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91BA6D57-A526-4F78-9D13-DD2BB827AA3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA0DBD92-42DD-4BDB-95D8-C9F4A3F96016}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA0DBD92-42DD-4BDB-95D8-C9F4A3F96016}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA0DBD92-42DD-4BDB-95D8-C9F4A3F96016}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA0DBD92-42DD-4BDB-95D8-C9F4A3F96016}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {713542A3-547D-43EA-B0CA-1F014D2561C2}
+	EndGlobalSection
+EndGlobal
