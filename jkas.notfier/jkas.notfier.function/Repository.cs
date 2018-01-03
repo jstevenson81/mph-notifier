@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using RestSharp;
 
 namespace jkas.notfier.function
@@ -12,14 +13,17 @@ namespace jkas.notfier.function
         {
             ApiUrl = $"https://{coin}.miningpoolhub.com/index.php?api_key={apiKey}";
         }
-        public async Task<GetUserTransactions> GetUserTransactions()
+        public async Task<MiningPoolHubData> GetUserTransactions()
         {
             var client = new RestClient(ApiUrl);
             var request = new RestRequest(Method.GET);
             request.AddQueryParameter("page", "api");
             request.AddQueryParameter("action", "getusertransactions");
 
-            var response = await client.ExecuteTaskAsync(request);
+            var reponse = await client.ExecuteTaskAsync(request);
+            var data = JsonConvert.DeserializeObject<MiningPoolHubData>(reponse.Content);
+            return data;
+
         }
     }
 
@@ -52,5 +56,10 @@ namespace jkas.notfier.function
         public string version { get; set; }
         public double runtime { get; set; }
         public Data data { get; set; }
+    }
+
+    public class MiningPoolHubData
+    {
+        public GetUserTransactions GetUserTransactions { get; set; }
     }
 }
